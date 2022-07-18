@@ -1,10 +1,11 @@
 import React from 'react';
 import { ITrack } from 'src/types/track';
 import { Card, Grid, IconButton } from '@material-ui/core';
-import styles from '../styles/TrackItem.module.scss';
+import styles from 'src/styles/TrackItem.module.scss';
 import { Delete, Pause, PlayArrow } from '@material-ui/icons';
 import { useRouter } from 'next/router';
 import { useActions } from 'src/hooks/useActions';
+import Image from 'next/image';
 
 interface TrackItemProps {
   track: ITrack;
@@ -32,10 +33,11 @@ export const TrackItem: React.FC<TrackItemProps> = ({
       <IconButton onClick={play}>
         {!active ? <PlayArrow /> : <Pause />}
       </IconButton>
-      <img
+      <Image
         width={70}
         height={70}
-        src={'http://localhost:5000/' + track.picture}
+        src={`${process.env.NEXT_PUBLIC_API}/` + track.picture}
+        alt={track.name}
       />
       <Grid
         container

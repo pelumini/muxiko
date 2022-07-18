@@ -1,6 +1,6 @@
 import React, { ReactChild, ReactFragment, ReactPortal } from 'react';
 import { Container } from '@material-ui/core';
-// import Player from '../components/Player';
+import Player from 'src/components/Player';
 import Head from 'next/head';
 import Navbar from '../Navbar';
 
@@ -34,7 +34,7 @@ export const Layout: React.FC<ILayoutProps> = ({
       </Head>
       <Navbar />
       <Container style={{ margin: '90px 0' }}>{children}</Container>
-      {/* <Player /> */}
+      <Player />
     </>
   );
 };

@@ -12,6 +12,16 @@ const Index = () => {
           <h3>Here are the best tracks!</h3>
         </div>
       </Layout>
+      <style jsx>
+        {`
+                    .center {
+                        margin-top: 150px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                `}
+      </style>
     </>
   );
 };
