@@ -68,7 +68,7 @@ const Create = () => {
         )}
         {activeStep === 2 && (
           <FileUpload setFile={setAudio} accept="audio/*">
-            <Button>Download audio</Button>
+            <Button>Upload Audio</Button>
           </FileUpload>
         )}
       </StepWrapper>
