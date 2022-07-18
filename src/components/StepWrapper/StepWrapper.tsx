@@ -11,7 +11,7 @@ import {
 interface StepWrapperProps {
   activeStep: number;
 }
-const steps = ['Track Information', 'Upload Dover', 'Upload Track '];
+const steps = ['Track Information', 'Upload Cover', 'Upload Track '];
 
 export const StepWrapper: React.FC<StepWrapperProps> = ({
   activeStep,

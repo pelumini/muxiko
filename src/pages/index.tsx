@@ -1,6 +1,4 @@
 import React from 'react';
-import { Button } from '@material-ui/core';
-import Navbar from 'src/components/Navbar';
 import { Layout } from 'src/components';
 
 const Index = () => {
@@ -8,8 +6,8 @@ const Index = () => {
     <>
       <Layout>
         <div className="center">
-          <h1>Welcome!</h1>
-          <h3>Here are the best tracks!</h3>
+          <h1>Welcome to Muxiko</h1>
+          <h3>Click on the menu for the best tracks!</h3>
         </div>
       </Layout>
       <style jsx>

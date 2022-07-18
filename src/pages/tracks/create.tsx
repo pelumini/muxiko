@@ -45,17 +45,17 @@ const Create = () => {
             <TextField
               {...name}
               style={{ marginTop: 10 }}
-              label={'Name of the track'}
+              label={'Track Name'}
             />
             <TextField
               {...artist}
               style={{ marginTop: 10 }}
-              label={'Artist name'}
+              label={'Artist Name'}
             />
             <TextField
               {...text}
               style={{ marginTop: 10 }}
-              label={'Lyrics to the track'}
+              label={'Track Lyrics'}
               multiline
               rows={3}
             />

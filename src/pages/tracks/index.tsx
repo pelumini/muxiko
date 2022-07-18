@@ -28,9 +28,9 @@ const Index = () => {
         <Card style={{ width: 900 }}>
           <Box p={3}>
             <Grid container justifyContent="space-between">
-              <h1>Track list</h1>
+              <h1>Track List</h1>
               <Button onClick={() => router.push('/tracks/create')}>
-                Download
+                Create Track
               </Button>
             </Grid>
           </Box>
