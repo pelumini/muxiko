@@ -1,5 +1,5 @@
 import { Dispatch } from 'react';
-import { TrackAction, TrackActionTypes } from '../../types/track';
+import { TrackAction, TrackActionTypes } from 'src/types/track';
 import axios from 'axios';
 
 export const fetchTracks = () => {

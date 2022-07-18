@@ -1,4 +1,4 @@
-import { TrackAction, TrackActionTypes, TrackState } from '../../types/track';
+import { TrackAction, TrackActionTypes, TrackState } from 'src/types/track';
 
 const initialState: TrackState = {
   tracks: [],
