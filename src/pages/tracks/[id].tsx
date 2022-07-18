@@ -45,11 +45,11 @@ const TrackPage: NextPage<ITrackPageProps> = ({ serverTrack }) => {
         style={{ fontSize: 32 }}
         onClick={() => router.push('/tracks')}
       >
-        К списку
+        К List
       </Button>
       <Grid container style={{ margin: '20px 0' }}>
         <Image
-          src={`${process.env.NEXT_PUBLIC_API}` + track.picture}
+          src={`${process.env.NEXT_PUBLIC_API}/` + track.picture}
           width={200}
           height={200}
           alt={track.name}
@@ -66,7 +66,7 @@ const TrackPage: NextPage<ITrackPageProps> = ({ serverTrack }) => {
       <Grid container>
         <TextField label="Your name" fullWidth {...username} />
         <TextField label="Comment" {...text} fullWidth multiline rows={4} />
-        <Button onClick={addComment}>Отправить</Button>
+        <Button onClick={addComment}>Submit</Button>
       </Grid>
       <div>
         {track.comments.map((comment) => (
@@ -86,7 +86,7 @@ export const getServerSideProps: GetServerSideProps = async ({
   params,
 }: any) => {
   const response = await axios.get(
-    `${process.env.NEXT_PUBLIC_API}/` + params.id
+    `${process.env.NEXT_PUBLIC_API}/tracks/` + params.id
   );
   return {
     props: {
